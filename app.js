@@ -1,10 +1,10 @@
 let gameSeq=[];
 let userSeq=[];
-let btns=['yellow','red','purple','green'];
-
+let btns=['red','green','yellow','purple'];
 let started=false;
 let level=0;
 let h2=document.querySelector('h2');
+
 document.addEventListener('keypress',function(){
     if(started==false){
     console.log("game started");
@@ -26,7 +26,6 @@ function userFlash(btn){
         btn.classList.remove('userflash')
     },250);
 }
-
 
 function levelUp(){
     userSeq=[];
